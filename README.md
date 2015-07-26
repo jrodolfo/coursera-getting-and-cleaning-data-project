@@ -3,7 +3,7 @@ See: https://www.coursera.org/course/getdata
 
 ## How the script works
 
-Run the script run_analysis.R. As an output, you should find the same folder a file called tidy-data-set-created-in-step-5.txt
+Run the script run_analysis.R, and as an output you should find (in the same folder where you ran the script) a file called tidy-data-set-created-in-step-5.txt
 
 ## Code book describing the variables
 
