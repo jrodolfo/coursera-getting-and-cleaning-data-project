@@ -1,11 +1,11 @@
 # coursera-getting-and-cleaning-data-project
 See: https://www.coursera.org/course/getdata
 
-How the script works
+## How the script works
 
 Run the script run_analysis.R. As an output, you should find the same folder a file called tidy-data-set-created-in-step-5.txt
 
-Code book describing the variables
+## Code book describing the variables
 
 * Subject: identify by a number each person that volunteered for the project.
 * Activity: are the phisical activities when taking the measure. There are 6 types: walking, walking upstairs, walking downstairs, sitting, standing, and laying
