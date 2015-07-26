@@ -8,11 +8,6 @@ rm(list = ls())
 # Set the work directory
 setwd("C:/Users/Rod/Documents/coursera/data-science/03_gettingAndCleaningData/05/project/UCI HAR Dataset/")
 
-# Checking and creating directory
-if (!file.exists("data")) {
-  dir.create("data")
-}
-
 
 ############################################################################
 # Step 1)
@@ -43,6 +38,7 @@ y_data  <- rbind(y_test, y_train)
 x_test <- read.csv(file_x_test, head=FALSE, sep="")
 x_train <- read.csv(file_x_train, head=FALSE, sep="")
 x_data  <- rbind(x_test, x_train)
+
 
 ############################################################################
 # Step 2)
@@ -96,16 +92,15 @@ data$activity <- activity_labels$activity_name[match(data$activity, activity_lab
 head(data, 1)
 
 
-
 ############################################################################
 # Step 4)
 # Appropriately labels the data set with descriptive variable names.
 ############################################################################
 
-
 col_headings <- c("subject", "activity", as.vector(features_mean_and_std$V2[]))
 names(data) <- col_headings
 head(data, 1)
+
 
 ############################################################################
 # Step 5)
@@ -147,6 +142,7 @@ summary
 
 write.table(summary, file = "tidy-data-set-created-in-step-5.txt", append = FALSE, quote = FALSE, sep = "|", row.names = FALSE)
 
+
 ############################################################################
 # Step 7)
 # Submit a link to a Github repo with the code for performing your analysis.
@@ -156,4 +152,6 @@ write.table(summary, file = "tidy-data-set-created-in-step-5.txt", append = FALS
 # a README.md in the repo describing how the script works and the code book
 # describing the variables.
 ############################################################################
+
+# https://github.com/jrodolfo/coursera-getting-and-cleaning-data-project
 
